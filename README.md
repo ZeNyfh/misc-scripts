@@ -54,6 +54,12 @@ I needed this because I was using a program which only took mp3s in, uses FFMpeg
 
 I think this was for saving file space because I had a BUNCH of large png files which I did not want to JPEG-ify due to PNG being required in that case. Could be useful for someone.
 
+### sudo.bat
+
+- attempts to run a passed in process with UAC/admin priveleges.
+
+This was made because I wanted to have a more linux-like experience on windows, it was especially nice if I had a normal cmd window open and wanted to run something as admin. Quite useful overall, though I haven't used this in ages.
+
 ## Powershell
 
 ### changeJava.ps1
