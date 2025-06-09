@@ -27,3 +27,15 @@ I made this specifically so that my Wii can connect to the internet on my univer
 I made this a while ago to help me out with adding AppImages and bash scripts to my Menu in the Cinnamon desktop environment, should work with all DEs with a "Quick Access" menu though.
 
 I could have just moved the executable files into the `.local/share/applications` directory but then it wouldn't have *thumbnails*.
+
+## C++
+
+### fileSorter.cpp
+
+- Hardcoded, if you want to use this I recommend changing the paths this uses, perhaps someday I will add a .conf file for this to use.
+
+- Broken(?), requires a couple runs sometimes, I haven't looked at this code in a while.
+
+This originally started as one of my first python programming projects, but it has since been re-coded in java, I think batch at some point, C# for fun, and now C++, I want to attempt this in Assembly eventually.
+
+The reason why this actually exists is because I am a hoarder of files, I like to click download on funny/cool media I see, but this takes up precious storage space on my OS drive, so I move stuff to my other drives using this script.
