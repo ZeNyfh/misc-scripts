@@ -40,6 +40,25 @@ I could have just moved the executable files into the `.local/share/applications
 
 ## Java
 
+### DuplicateFileRemover.java
+
+- Removes all duplicate files based on file hash.
+
+- Caches all the hashes for faster comparisons when ran again.
+
+Not everyone needs this, however I am a little daft sometimes and download the same files multiple times, or forget that I have downloaded them and have multiple copies of them, this is nice to remove them all.
+<br><br>
+
+### FileSorter.java
+
+- this is the predecessor to [fileSorter.cpp](#fileSorter.cpp).
+
+- Hardcoded, if you want to use this I recommend changing the paths this uses, perhaps someday I will add a .conf file for this to use.
+
+This originally started as one of my first python programming projects, but it has since been re-coded in java, I think batch at some point, C# for fun, and now C++, I want to attempt this in Assembly eventually.
+
+The reason why this actually exists is because I am a hoarder of files, I like to click download on funny/cool media I see, but this takes up precious storage space on my OS drive, so I move stuff to my other drives using this script.
+<br><br>
 
 ## C++
 
