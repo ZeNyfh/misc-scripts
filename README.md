@@ -110,3 +110,17 @@ This was made because I wanted to have a more linux-like experience on windows, 
 ### changeJava.ps1
 
 I remember this sort of worked, this is the Windows equivalent of changeJava.sh, I don't use Windows anymore however, this is here for archival purposes. Though, if you find this useful feel free to use it/add more to it with a PR. :)
+<br><br>
+
+## JavaScript
+
+### cyrillicToPolish.js
+	
+- **Tamper Monkey Script**
+
+- Transliterates Cyrillic text to Polish equivalent text on specific web pages dynamically.
+
+Manually defined to use: YouTube, Genius Lyrics, Lyrics Translate, and Online Notepad. 
+
+This has also been through many iterations, currently on version 1.6 as of writing. Sadly I don't have the version history for this which would've been fun. This started off as a standalone python project, I have many spinoff transliterators written in python, but Russian to Polish was the first one I made.
+<br><br>
