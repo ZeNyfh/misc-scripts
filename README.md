@@ -1,6 +1,12 @@
 # misc-scripts
 Miscellaneous scripts, commands, notes, and code snippets by ZeNyfh.
 
+- [Bash Section](#Bash)
+- [Java Section](#Java)
+- [C++ Section](#C++)
+- [Batch Section](#Batch)
+- [Powershell section](#Powershell)
+
 ## Bash
 
 ### fullscreen.sh
@@ -27,6 +33,9 @@ I made this specifically so that my Wii can connect to the internet on my univer
 I made this a while ago to help me out with adding AppImages and bash scripts to my Menu in the Cinnamon desktop environment, should work with all DEs with a "Quick Access" menu though.
 
 I could have just moved the executable files into the `.local/share/applications` directory but then it wouldn't have *thumbnails*.
+
+## Java
+
 
 ## C++
 
