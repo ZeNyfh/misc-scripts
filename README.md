@@ -51,7 +51,7 @@ Not everyone needs this, however I am a little daft sometimes and download the s
 
 ### FileSorter.java
 
-- this is the predecessor to [fileSorter.cpp](#fileSorter.cpp).
+- this is the predecessor to [fileSorter.cpp](#filesortercpp).
 
 - Hardcoded, if you want to use this I recommend changing the paths this uses, perhaps someday I will add a .conf file for this to use.
 
