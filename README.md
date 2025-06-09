@@ -14,3 +14,8 @@ This exists because it works really well for minecraft versions which dont play 
 
 This utilises the "update-alternatives" command to allow for quick switching of java versions that are installed. Great for people who use jars which require different JREs (Minecraft servers especially).
 
+### hotspot.sh
+
+- Takes in a network interface name, a chosen SSID, and a password for the hotspot.
+
+I made this specifically so that my Wii can connect to the internet on my university accomodation Wi-Fi network.
