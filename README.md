@@ -1,129 +1,123 @@
 # misc-scripts
-Miscellaneous scripts, commands, notes, and code snippets by ZeNyfh.
 
-- [Bash Section](#Bash)
-- [Java Section](#Java)
-- [C++ Section](#C++)
-- [Batch Section](#Batch)
-- [Powershell section](#Powershell)
-- [JavaScript Section](#JavaScript)
+Miscellaneous scripts, commands, notes, and code snippets by me, **ZeNyfh**.
+
+> 🔗 **Click a badge to jump to that section below.**
+
+[![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge\&logo=gnu-bash\&logoColor=white)](#bash)
+[![Batch File](https://img.shields.io/badge/batch_file-%23008080.svg?style=for-the-badge)](#batch)
+[![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge\&logo=powershell\&logoColor=white)](#powershell)
+[![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge\&logo=openjdk\&logoColor=white)](#java)
+[![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge\&logo=c%2B%2B\&logoColor=white)](#c)
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge\&logo=javascript\&logoColor=%23F7DF1E)](#javascript)
+
+---
 
 ## Bash
 
-### fullscreen.sh
+### `fullscreen.sh`
 
-- Requires wmctrl, this can be acquired through apt.
-- Takes in an app name, for example "Firefox" or "Github Desktop" and makes it borderless windowed, no need for quotes or fancy stuff, just pass in the name with spaces.
+* Requires `wmctrl` (available via `apt`).
+* Takes in an app name (e.g., "Firefox") and makes it borderless windowed.
 
-This exists because it works really well for minecraft versions which dont play nicely with fullscreen, like 1.12.2.
-<br><br>
+> Useful for Minecraft 1.12.2, which doesn’t play nicely with fullscreen.
 
-### changeJava.sh
+### `changeJava.sh`
 
-This utilises the "update-alternatives" command to allow for quick switching of java versions that are installed. Great for people who use jars which require different JREs (Minecraft servers especially).
-<br><br>
+* Uses `update-alternatives` for switching Java versions quickly.
 
-### hotspot.sh
+> Useful when running multiple Minecraft server jars.
 
-- Takes in a network interface name, a chosen SSID, and a password for the hotspot.
+### `hotspot.sh`
 
-I made this specifically so that my Wii can connect to the internet on my university accomodation Wi-Fi network.
-<br><br>
+* Arguments: `interface name` `SSID` `password`
 
-### appHelper.sh
+> Originally made for getting my Wii online on university Wi-Fi, also nice for on-the-go LAN gaming.
 
-- Get's user input to create a menu shortcut for a script/application.
+### `appHelper.sh`
 
-I made this a while ago to help me out with adding AppImages and bash scripts to my Menu in the Cinnamon desktop environment, should work with all DEs with a "Quick Access" menu though.
+* Takes user input to create a `.desktop` menu shortcut for an app or script.
 
-I could have just moved the executable files into the `.local/share/applications` directory but then it wouldn't have *thumbnails*.
-<br><br>
+> Great for integrating AppImages or Bash scripts into Linux DE menus, with thumbnails.
+
+---
 
 ## Java
 
-### VideoCompressor.java
+### `VideoCompressor.java`
 
-- Takes in a file and uses FFMpeg 2 pass filtering to lower the filsize by changing the bitrate
+* Uses FFmpeg (2-pass filtering) to compress a file by changing its bitrate.
+* Outputs 10MB files by default, the discord limit without nitro.
 
-This is one of my nicer tools, this came from one of my projects (Zenvibe), which used to download videos and send them to discord, and of course files needed to be made smaller to be sent. Though that feature was too annoying to develop and was therefore scrapped, but worked really well as a standalone utility for compressing videos to be sent onto discord.
+> Originated from Zenvibe, my Discord music bot, from a scrapped video downloading feature. Future plans: add resolution scaling.
 
-It really needs to be improved on by lowering resolution if the bitrate is too low, but that is effort and for a later date.
-<br><br>
+### `DuplicateFileRemover.java`
 
-### DuplicateFileRemover.java
+* Scans and deletes duplicate files based on file hash.
+* Uses hash caching for faster re-runs.
 
-- Removes all duplicate files based on file hash.
+> Because sometimes you forget you already downloaded something 3 times (a me issue).
 
-- Caches all the hashes for faster comparisons when ran again.
+### `FileSorter.java`
 
-Not everyone needs this, however I am a little daft sometimes and download the same files multiple times, or forget that I have downloaded them and have multiple copies of them, this is nice to remove them all.
-<br><br>
+* Predecessor to [`fileSorter.cpp`](#filesortercpp).
+* Hardcoded paths (you’ll want to change them).
 
-### FileSorter.java
+> Began as a Python project; rewritten in Java, Batch, C#, and C++. Might make it in Assembly next.
 
-- this is the predecessor to [fileSorter.cpp](#filesortercpp).
-
-- Hardcoded, if you want to use this I recommend changing the paths this uses, perhaps someday I will add a .conf file for this to use.	
-
-This originally started as one of my first python programming projects, but it has since been re-coded in java, I think batch at some point, C# for fun, and now C++, I want to attempt this in Assembly eventually.
-
-The reason why this actually exists is because I am a hoarder of files, I like to click download on funny/cool media I see, but this takes up precious storage space on my OS drive, so I move stuff to my other drives using this script.
-<br><br>
+---
 
 ## C++
 
-### fileSorter.cpp
+### `fileSorter.cpp`
 
-- Hardcoded, if you want to use this I recommend changing the paths this uses, perhaps someday I will add a .conf file for this to use.
+* Hardcoded paths (you’ll want to change them).
+* May need multiple runs (a bit buggy).
 
-- Broken(?), requires a couple runs sometimes, I haven't looked at this code in a while.
+> Same origin story as `FileSorter.java`. File hoarding problems solved via automation. Future plans: add user config for paths and filetypes. Also fix multiple runs issue.
 
-This originally started as one of my first python programming projects, but it has since been re-coded in java, I think batch at some point, C# for fun, and now C++, I want to attempt this in Assembly eventually.
-
-The reason why this actually exists is because I am a hoarder of files, I like to click download on funny/cool media I see, but this takes up precious storage space on my OS drive, so I move stuff to my other drives using this script.
-<br><br>
+---
 
 ## Batch
 
-### folderToMP3.bat
+### `folderToMP3.bat`
 
-- attempts to convert all files (non-bat) in the directory to mp3 using FFMpeg.
+* Converts all non-BAT files in a folder to MP3 using FFmpeg.
 
-I needed this because I was using a program which only took mp3s in, uses FFMpeg so it works with mp4s too, overall nice script that I used on Windows.
-<br><br>
+> For programs that only support MP3 input or other use cases.
 
-### folderHalfPNGRes.bat
+### `folderHalfPNGRes.bat`
 
-- attempts to half the resolution of all PNG files in the directory using FFMpeg.
+* Halves resolution of all PNGs in a folder using FFmpeg.
 
-I think this was for saving file space because I had a BUNCH of large png files which I did not want to JPEG-ify due to PNG being required in that case. Could be useful for someone.
-<br><br>
+> Saves space while keeping PNG format.
 
-### sudo.bat
+### `sudo.bat`
 
-- attempts to run a passed in process with UAC/admin priveleges.
+* Runs a passed command with UAC/admin privileges.
 
-This was made because I wanted to have a more linux-like experience on windows, it was especially nice if I had a normal cmd window open and wanted to run something as admin. Quite useful overall, though I haven't used this in ages.
-<br><br>
+> Made to simulate Linux `sudo` experience on Windows.
 
-## Powershell
+---
 
-### changeJava.ps1
+## PowerShell
 
-I remember this sort of worked, this is the Windows equivalent of changeJava.sh, I don't use Windows anymore however, this is here for archival purposes. Though, if you find this useful feel free to use it/add more to it with a PR. :)
-<br><br>
+### `changeJava.ps1`
+
+* Windows equivalent of `changeJava.sh`.
+
+> Works similarly but is now unused by me as I daily drive Linux now. Could be useful to others though.
+
+---
 
 ## JavaScript
 
-### cyrillicToPolish.js
-	
-- **Tamper Monkey Script**
+### `cyrillicToPolish.js`
 
-- Transliterates Cyrillic text to Polish equivalent text on specific web pages dynamically.
+* **Tampermonkey Script**
+* Transliterates Cyrillic text to Polish dynamically on web pages.
+* Currently configured to use YouTube, Genius Lyrics, Lyrics Translate, and Online Notepad.
 
-Manually defined to use: YouTube, Genius Lyrics, Lyrics Translate, and Online Notepad. 
+> Began as a Python project. Version 1.6 as of now. Not perfect due to pronunciation rules but does the job.
 
-This has also been through many iterations, currently on version 1.6 as of writing. Sadly I don't have the version history for this which would've been fun. This started off as a standalone python project, I have many spinoff transliterators written in python, but Russian to Polish was the first one I made.
-
-It isn't perfect, some letters are the wrong vowel because of russian pronunciation rules, but thats for later.
-<br><br>
+---
