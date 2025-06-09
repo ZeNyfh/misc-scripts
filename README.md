@@ -6,6 +6,7 @@ Miscellaneous scripts, commands, notes, and code snippets by ZeNyfh.
 - [C++ Section](#C++)
 - [Batch Section](#Batch)
 - [Powershell section](#Powershell)
+- [JavaScript Section](#JavaScript)
 
 ## Bash
 
