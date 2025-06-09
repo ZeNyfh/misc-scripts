@@ -40,6 +40,15 @@ I could have just moved the executable files into the `.local/share/applications
 
 ## Java
 
+### VideoCompressor.java
+
+- Takes in a file and uses FFMpeg 2 pass filtering to lower the filsize by changing the bitrate
+
+This is one of my nicer tools, this came from one of my projects (Zenvibe), which used to download videos and send them to discord, and of course files needed to be made smaller to be sent. Though that feature was too annoying to develop and was therefore scrapped, but worked really well as a standalone utility for compressing videos to be sent onto discord.
+
+It really needs to be improved on by lowering resolution if the bitrate is too low, but that is effort and for a later date.
+<br><br>
+
 ### DuplicateFileRemover.java
 
 - Removes all duplicate files based on file hash.
@@ -53,7 +62,7 @@ Not everyone needs this, however I am a little daft sometimes and download the s
 
 - this is the predecessor to [fileSorter.cpp](#filesortercpp).
 
-- Hardcoded, if you want to use this I recommend changing the paths this uses, perhaps someday I will add a .conf file for this to use.
+- Hardcoded, if you want to use this I recommend changing the paths this uses, perhaps someday I will add a .conf file for this to use.	
 
 This originally started as one of my first python programming projects, but it has since been re-coded in java, I think batch at some point, C# for fun, and now C++, I want to attempt this in Assembly eventually.
 
