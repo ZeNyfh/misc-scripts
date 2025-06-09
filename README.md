@@ -124,4 +124,6 @@ I remember this sort of worked, this is the Windows equivalent of changeJava.sh,
 Manually defined to use: YouTube, Genius Lyrics, Lyrics Translate, and Online Notepad. 
 
 This has also been through many iterations, currently on version 1.6 as of writing. Sadly I don't have the version history for this which would've been fun. This started off as a standalone python project, I have many spinoff transliterators written in python, but Russian to Polish was the first one I made.
+
+It isn't perfect, some letters are the wrong vowel because of russian pronunciation rules, but thats for later.
 <br><br>
