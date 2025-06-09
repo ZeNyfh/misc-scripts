@@ -40,6 +40,14 @@ This originally started as one of my first python programming projects, but it h
 
 The reason why this actually exists is because I am a hoarder of files, I like to click download on funny/cool media I see, but this takes up precious storage space on my OS drive, so I move stuff to my other drives using this script.
 
+## Batch
+
+### folderToMP3
+
+- attempts to convert all files (non-bat) in the directory to mp3 using FFMpeg.
+
+I needed this because I was using a program which only took mp3s in, uses FFMpeg so it works with mp4s too, overall nice script that I used on Windows.
+
 ## Powershell
 
 ### changeJava.ps1
