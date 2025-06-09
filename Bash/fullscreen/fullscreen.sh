@@ -1,3 +1,6 @@
+
+#!/bin/bash
+
 if [[ $1 == "" ]] then
 	echo "No argument given."
 	exit 0

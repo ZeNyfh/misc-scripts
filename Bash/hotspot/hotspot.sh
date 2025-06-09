@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [[ $3 == "" ]] then
 	echo "Not all arguments given."
 	echo "Usage: ./hotspot interface SSID password"
