@@ -42,11 +42,17 @@ The reason why this actually exists is because I am a hoarder of files, I like t
 
 ## Batch
 
-### folderToMP3
+### folderToMP3.bat
 
 - attempts to convert all files (non-bat) in the directory to mp3 using FFMpeg.
 
 I needed this because I was using a program which only took mp3s in, uses FFMpeg so it works with mp4s too, overall nice script that I used on Windows.
+
+### folderHalfPNGRes.bat
+
+- attempts to half the resolution of all PNG files in the directory using FFMpeg.
+
+I think this was for saving file space because I had a BUNCH of large png files which I did not want to JPEG-ify due to PNG being required in that case. Could be useful for someone.
 
 ## Powershell
 
